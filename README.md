@@ -1,5 +1,5 @@
 # winconfig
-This repository contain my configuration files for MS Windows.
+This repository contains my configuration files for MS Windows.
 
 ## Screenshots 
 ![screenshot (1)](https://github.com/user-attachments/assets/6428b5e3-d895-4659-82ca-2225e27ae628)
