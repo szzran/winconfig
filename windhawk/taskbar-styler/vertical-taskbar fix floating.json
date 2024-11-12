@@ -1,0 +1,15 @@
+{
+  "theme": "",
+  "controlStyles[0].target": "Taskbar.TaskbarFrame#TaskbarFrame > Grid#RootGrid",
+  "controlStyles[0].styles[0]": "CornerRadius=9",
+  "controlStyles[1].target": "Grid#SystemTrayFrameGrid",
+  "controlStyles[0].styles[1]": "BorderThickness=0",
+  "controlStyles[0].styles[2]": "BorderBrush:=Purple",
+  "controlStyles[1].styles[0]": "Height=60",
+  "controlStyles[1].styles[1]": "Margin=10,1015,10,10",
+  "controlStyles[0].styles[3]": "Margin=6,6,6,6",
+  "controlStyles[2].target": "Taskbar.TaskListButton",
+  "controlStyles[2].styles[0]": "Margin=0,1010,0,0",
+  "controlStyles[3].target": "Taskbar.ExperienceToggleButton#LaunchListButton[AutomationProperties.AutomationId=StartButton]",
+  "controlStyles[3].styles[0]": "Margin=0,1010,0,0"
+}

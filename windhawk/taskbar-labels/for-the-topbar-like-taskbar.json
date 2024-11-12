@@ -1,0 +1,14 @@
+{
+  "taskbarItemWidth": 0,
+  "minimumTaskbarItemWidth": 0,
+  "maximumTaskbarItemWidth": 150,
+  "runningIndicatorStyle": "fullWidth",
+  "progressIndicatorStyle": "fullWidth",
+  "fontSize": 11,
+  "leftAndRightPaddingSize": 12,
+  "spaceBetweenIconAndLabel": 14,
+  "labelForSingleItem": "%name%",
+  "labelForMultipleItems": "[%amount%] %name%",
+  "mode": "labelsWithoutCombining",
+  "excludedPrograms[0]": "excluded1.exe"
+}
