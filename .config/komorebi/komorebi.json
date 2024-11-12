@@ -1,0 +1,193 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.30/schema.json",
+  "app_specific_configuration_path": "$Env:USERPROFILE/.config/komorebi/applications.json",
+  "window_hiding_behaviour": "Cloak",
+  "cross_monitor_move_behaviour": "Insert",
+  "cross_boundary_behaviour": "Monitor",
+  "mouse_follows_focus": false,
+  "default_workspace_padding": 6,
+  "default_container_padding": 5,
+  "border": false,
+  "border_width": 0,
+  "border_offset": -1,
+  "theme": {
+    "palette": "Base16",
+    "name": "GruvboxDarkSoft",
+    "stack_border": "Base0B",
+    "stackbar_background": "Base01",
+    "stackbar_focused_text": "Base0B",
+    "stackbar_unfocused_text": "Base05"
+  },
+  "stackbar": {
+    "height": 20,
+    "mode": "OnStack",
+    "label": "Process",
+    "tabs": {
+      "width": 150,
+      "font_size": 16,
+      "background": "#2f465d",
+      "focused_text": "#a2c5cf",
+      "font_family": "Inter"
+    }
+  },
+  "animation": {
+    "enabled": true,
+    "duration": 350,
+    "style": "EaseOutBack",
+    "fps": 120
+  },
+  "transparency": true,
+  "transparency_alpha": 245,
+  "transparency_ignore_rules": [
+    {
+      "kind": "Title",
+      "id": "YouTube",
+      "matching_strategy": "Contains"
+    }
+  ],
+  "display_index_preferences": {
+    "0": "AOC2402-5&2706c5e9&0&UID261",
+    "1": "BOE0AA8-5&2706c5e9&0&UID256"
+  },
+  "tray_and_multi_window_applications": [
+    {
+      "kind": "Exe",
+      "id": "Vesktop.exe",
+      "matching_strategy": "Equals"
+    }
+  ],
+  "layered_applications": [
+    {
+      "kind": "Exe",
+      "id": "Vesktop.exe",
+      "matching_strategy": "Equals"
+    }
+  ],
+  "ignore_rules": [
+    {
+      "kind": "Title",
+      "id": "PasteEx",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "fdm.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "flux.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Title",
+      "id": "Seelen Wall",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "bt.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "FluentFlyout.exe",
+      "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Exe",
+      "id": "wallpaper32.exe",
+      "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Title",
+      "id": "Discord Updater",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Title",
+      "id": "Arc extension popup",
+      "matching_strategy": "Equals"
+    }
+  ],
+  "floating_applications": [
+    {
+      "kind": "Exe",
+      "id": "explorer.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "NanaZip.Modern.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Title",
+      "id": "Settings",
+      "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Title",
+      "id": "Properties",
+      "matching_strategy": "Equals"
+    }
+  ],
+  "slow_application_identifiers": [
+    {
+      "kind": "Exe",
+      "id": "zen.exe",
+      "matching_strategy": "Equals"
+    }
+  ],
+  "manage_rules": [],
+  "bar_configurations": [
+    "$Env:KOMOREBI_CONFIG_HOME/komorebi.bar.json"
+  ],
+  "monitors": [
+    {
+      "workspaces": [
+        {
+          "name": "\uebc7",
+          "layout": "BSP"
+        },
+        {
+          "name": "\udb80\ude4b",
+          "layout": "BSP"
+        },
+        {
+          "name": "\ue658",
+          "layout": "BSP"
+        },
+        {
+          "name": "\uf1bc",
+          "layout": "BSP"
+        },
+        {
+          "name": "V",
+          "layout": "BSP"
+        },
+        {
+          "name": "VI",
+          "layout": "BSP"
+        },
+        {
+          "name": "VII",
+          "layout": "BSP"
+        },
+        {
+          "name": "VIII",
+          "layout": "BSP",
+          "float_override": true
+        }
+      ]
+    },
+    {
+      "workspaces": [
+        {
+          "name": "laptop",
+          "layout": "BSP"
+        }
+      ]
+    }
+  ]
+}
