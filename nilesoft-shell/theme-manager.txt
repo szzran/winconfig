@@ -1,0 +1,32 @@
+Theme Manager Installation:
+
+Before installing/registering Shell.
+
+1.- Copy and paste the file "theme-manager.nss" in the "imports" folder of the Shell directory.
+
+2.- Edit the file "shell.nss" and insert the following line of code: import 'imports/theme-manager.nss', at the end of the list of import 'imports/...'.
+
+...
+import 'imports/taskbar.nss'.
+import 'imports/theme-manager.nss'
+ 
+
+3.- Run "shell.exe" as Administrator, Register...
+
+4.- In the taskbar, right click to show the context menu. The first item that should be displayed is "Set Theme Manager".
+
+5.- Click on "Set Theme Manager" and the file "shell.nss" will be opened in the "Notepad".
+
+6.- From the same Notepad, replace the path of the old theme file: import 'imports/theme.nss' by the new import 'themes/default.nss', save when closing.
+NOTE: ⁠themes⁠Nilesoft Shell Theme Manager (N…
+
+...
+import 'themes/default.nss' 
+import 'imports/images.nss'
+
+import 'imports/modify.nss'
+...
+
+ 7.- If everything went well, in the shell context menu of the taskbar the option "Set Theme Manager" should be shown as "Theme Manager".
+
+In the shell directory, a new folder "themes" will be created.
