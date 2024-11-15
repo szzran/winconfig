@@ -1,6 +1,6 @@
 ﻿#Requires AutoHotkey v2.0
 
-^+.::CheckActiveWindow()
+^h::CheckActiveWindow()
 
 CheckActiveWindow()
 {
