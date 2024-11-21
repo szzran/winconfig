@@ -25,8 +25,8 @@
             "keys": "ctrl+c"
         },
         {
-            "id": null,
-            "keys": "alt+shift+minus"
+            "id": "User.globalSummon.51A3D78C",
+            "keys": "alt+f2"
         },
         {
             "id": "Terminal.PasteFromClipboard",
@@ -41,8 +41,8 @@
             "keys": "alt+f"
         },
         {
-            "id": "User.globalSummon.51A3D78C",
-            "keys": "alt+g"
+            "id": "Terminal.DuplicatePaneRight",
+            "keys": "ctrl+shift+plus"
         },
         {
             "id": "Terminal.QuakeMode",
@@ -51,14 +51,6 @@
         {
             "id": "Terminal.DuplicatePaneDown",
             "keys": "ctrl+shift+minus"
-        },
-        {
-            "id": "Terminal.DuplicatePaneRight",
-            "keys": "ctrl+shift+plus"
-        },
-        {
-            "id": null,
-            "keys": "alt+shift+plus"
         }
     ],
     "launchMode": "default",
@@ -72,8 +64,8 @@
     {
         "defaults": 
         {
-            "antialiasingMode": "cleartype",
-            "colorScheme": "One Half Dark",
+            "antialiasingMode": "grayscale",
+            "colorScheme": "rose-pine",
             "cursorShape": "filledBox",
             "experimental.retroTerminalEffect": false,
             "experimental.rightClickContextMenu": true,
@@ -83,19 +75,20 @@
                 "face": "CaskaydiaCove Nerd Font"
             },
             "opacity": 0,
+            "unfocusedAppearance": {},
             "useAcrylic": true
         },
         "list": 
         [
             {
-                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "commandline": "%SystemRoot%/System32/WindowsPowerShell/v1.0/powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell",
                 "showMarksOnScrollbar": true
             },
             {
-                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "commandline": "%SystemRoot%/System32/cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "Command Prompt"
@@ -131,7 +124,7 @@
                 "commandline": "sh -i -l",
                 "guid": "{a1437962-b76a-4778-a0ad-054f22921b86}",
                 "hidden": false,
-                "icon": "C:\\Users\\ishmat\\scoop\\apps\\git\\current\\usr\\share\\git\\git-for-windows.ico",
+                "icon": "%userprofile%/scoop/apps/git/current/usr/share/git/git-for-windows.ico",
                 "name": "Git Bash",
                 "startingDirectory": "%USERPROFILE%"
             },
@@ -146,12 +139,6 @@
                 "hidden": true,
                 "name": "Developer PowerShell for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{47302f9c-1ac4-566c-aa3e-8cf29889d6ab}",
-                "hidden": false,
-                "name": "Nushell",
-                "source": "nu"
             }
         ]
     },
@@ -182,57 +169,11 @@
             "yellow": "#F6C177"
         }
     ],
-    "theme": "chonk",
+    "theme": "Mica",
     "themes": 
     [
         {
-            "name": "ModernDark",
-            "tab": 
-            {
-                "background": "#00000000",
-                "iconStyle": "default",
-                "showCloseButton": "hover",
-                "unfocusedBackground": "#00000000"
-            },
-            "tabRow": 
-            {
-                "background": "terminalBackground",
-                "unfocusedBackground": "terminalBackground"
-            },
-            "window": 
-            {
-                "applicationTheme": "dark",
-                "experimental.rainbowFrame": false,
-                "frame": null,
-                "unfocusedFrame": null,
-                "useMica": false
-            }
-        },
-        {
-            "name": "Seamless",
-            "tab": 
-            {
-                "background": "terminalBackground",
-                "iconStyle": "default",
-                "showCloseButton": "always",
-                "unfocusedBackground": "#FFFFFF00"
-            },
-            "tabRow": 
-            {
-                "background": "terminalBackground",
-                "unfocusedBackground": "#2C2C2CFF"
-            },
-            "window": 
-            {
-                "applicationTheme": "dark",
-                "experimental.rainbowFrame": false,
-                "frame": null,
-                "unfocusedFrame": null,
-                "useMica": false
-            }
-        },
-        {
-            "name": "chonk",
+            "name": "Mica",
             "tab": 
             {
                 "background": "#00000000",
@@ -252,6 +193,29 @@
                 "frame": null,
                 "unfocusedFrame": null,
                 "useMica": true
+            }
+        },
+        {
+            "name": "Seamless",
+            "tab": 
+            {
+                "background": "terminalBackground",
+                "iconStyle": "default",
+                "showCloseButton": "hover",
+                "unfocusedBackground": "#FFFFFF00"
+            },
+            "tabRow": 
+            {
+                "background": "terminalBackground",
+                "unfocusedBackground": "terminalBackground"
+            },
+            "window": 
+            {
+                "applicationTheme": "dark",
+                "experimental.rainbowFrame": false,
+                "frame": "accent",
+                "unfocusedFrame": null,
+                "useMica": false
             }
         }
     ],
