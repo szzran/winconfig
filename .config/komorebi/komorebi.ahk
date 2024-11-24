@@ -1,11 +1,9 @@
-﻿; Custom Komorebi Autohotkey
-
-#Requires AutoHotkey v2.0
+﻿#Requires AutoHotkey v2.0
 #SingleInstance Force
 ;#NoTrayIcon
 
 ; Initial tray settings
-TraySetIcon("C:\Users\ishmat\Pictures\ICONs\watermelon (2).ico", 1, false)
+TraySetIcon("C:\Users\" A_UserName "\Pictures\Icons\watermelon.ico", 1, false)
 A_IconTip := 'Komorebi Hotkey'
 
 ; Toggle suspend/unsuspend hotkey
@@ -31,7 +29,7 @@ A_IconTip := 'Komorebi Hotkey'
 }
 
 Komorebic(cmd) {
-  RunWait(format("komorebic.exe {}", cmd), , "Hide")
+    RunWait(format("komorebic.exe {}", cmd), , "Hide")
 }
 
 ; Komorebic specific command
