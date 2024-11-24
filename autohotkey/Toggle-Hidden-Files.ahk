@@ -1,30 +1,13 @@
 ﻿#Requires AutoHotkey v2.0
 
-^h::CheckActiveWindow()
-
-CheckActiveWindow()
+; Hotkey only works for the Explorer window and file picker.
+#HotIf WinActive("ahk_class CabinetWClass") || WinActive("ahk_class ExploreWClass") || WinActive("ahk_class #32770")
+^h::
 {
-global
-  ID := WinExist("A")
-  windowClass := WinGetClass("ahk_id " ID)
-  WClasses := "CabinetWClass ExploreWClass"
-  if InStr(WClasses, windowClass)
-    Toggle_HiddenFiles_Display()
-Return
+    global
+    HiddenFiles_Status := RegRead("HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced", "Hidden")
+    RegWrite(!HiddenFiles_Status, "REG_DWORD", "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced", "Hidden")
+    Send("{f5}")
+    Return
 }
-
-Toggle_HiddenFiles_Display()
-{
-global
-  RegPath := "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
-
-  HiddenFiles_Status := RegRead(RegPath, "Hidden")
-
-  if (HiddenFiles_Status = 2)
-      RegWrite(1, "REG_DWORD", RegPath, "Hidden")
-  else 
-      RegWrite(2, "REG_DWORD", RegPath, "Hidden")
-  PostMessage(0x111, 41504, , , "ahk_id " ID) ; or Send {AppsKey}e
-}
-
-Return
+#HotIf
