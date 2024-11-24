@@ -9,9 +9,11 @@ Persistent
 A_IconTip := (
     "Running Scripts:`n"
     "- Toggle-Hidden-Files (ctrl+h)`n"
-    "- Switch-Opened-Windows (alt+`)"
+    "- Switch-Opened-Windows (alt+~)`n"
+    "- FullScreen-Current-Window (alt+shift+f)"
 )
 
 ; Included individual scripts
 #Include "Toggle-Hidden-Files.ahk"
 #Include "Switch-Opened-Windows.ahk"
+#Include "FullScreen-Current-Window.ahk"
